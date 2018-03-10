@@ -1,0 +1,127 @@
+## Technologies
+
+### Languages
+- Javascript ( advanced usage )
+- TypeScript
+- Visual Basic.net
+- Markdown
+- C++
+- C#
+- Java
+    - (Received Award for Java Programming in 2004)
+- SQL
+- PostgreSQL ( advanced usage )
+- MySQL
+- PHP 5
+- Bash Shell
+- HTML 5
+- CSS 3
+- Sass
+- SVG
+- Node ( separate due to execution context )
+- JSON
+- XML
+- YAML
+- Python
+- ActionScript ( Flash )
+
+### Frameworks and Utilities
+- Docker
+- jQuery, jQuery UI
+- jQuery DataTables ( separate, older plugin)
+- Angular 1
+- Angular 2
+- Ionic 1
+- Ionic 2
+- Sencha Touch 2+
+- Apache Cordova
+- Adobe PhoneGap
+- Plugman
+- npm ( Node Package Manager)
+- Node
+- Laravel 4
+- Laravel 5
+- CronTab
+- ImageMagick
+- Express JS
+- Parse / Mongo DB
+- Heroku
+- Gulp
+- Composer
+- Symfony 1.4
+- Artisan
+- Bower
+- Apache Cordova
+- Linux - CentOS, Ubuntu
+- Windows XP thru 10
+- Mocha Automated Unit Testing
+- PapaParse - a CSV Parsing JS Library
+- Microsoft Office
+- Google Office ( Sheets, Docs, etc)
+- Draw.io
+- Adobe Creative Suite
+- Apache Webserver
+- Rsync
+- SSH
+- Https
+- Jira
+- Github / Bitbucket
+- SourceTree
+- JetBrains IDE's, including PHPStorm
+- Web API's
+    - Local Storage
+    - Navigator.Location
+    - DOM
+    - File, FileEntry
+- Moment and Moment Timezone (JS Date Framework)
+- Carbon - PHP Date framework
+- Underscore
+- Lodash
+
+### Concepts
+- Object Oriented Programming
+- Design Patterns
+    - MVC
+    - Composition
+    - Inheritance
+    - Factory
+    - Abstract Factory
+    - Facade
+    - Observer / Subject
+    - Command
+- Functional Programming
+- Game Design
+- Code Formatting
+- Documentation
+- Quick Research
+- Agile Development
+- Waterfall Development
+- Automated Testing
+- UX Design
+- UI Design
+- Database Patterns
+    - History Table
+    - Index Table
+    - Column Index
+    - Database Triggers
+    - Views
+    - Materialized Views
+    - public vs non-public schemas
+- Git Flow
+- SVN Version Control (outdated, but knowledge solid, moved to GIT before)
+- Graphic Design
+- Accepting Criticism
+- Communicating Ideas between technical and non-technical personnel
+- API design
+    - Error Codes
+    - Response Structure
+- Oauth2
+- Single Page Apps
+- Test Driven Design
+- Dependency Breaking
+- Routing
+- Web API's
+- Gamification ( applying game-type elements to non-game programs)
+- Separation of Concerns
+- NoSQL
+- Relational SQL

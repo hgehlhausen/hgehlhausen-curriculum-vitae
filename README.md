@@ -1,4 +1,10 @@
-# hgehlhausen-curriculum-vitae
+# Heath Gehlhausen, Web & Software Developer
+
+**Repo:** hgehlhausen-curriculum-vitae
+
 A series of documents detailing my curriculum vitae, or living knowledge.
 
-Note - currently under construction
+[Projects](./projects/)
+[Education](./education)
+[Resume](./resume/)
+[Technologies](./technologies/)
