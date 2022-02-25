@@ -1,4 +1,3 @@
-<style>header > p { font-weight: bold } </style>
 <header>
   <p align="right">
     <span class="c14">Heath Gildwel</span><br>
