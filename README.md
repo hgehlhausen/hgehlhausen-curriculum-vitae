@@ -1,7 +1,7 @@
 <!-- # Heath Gehlhausen, Fullstack Web &amp; Software Developer -->
 
 <!-- **Repo:** hgehlhausen-curriculum-vitae -->
-<img src="/hgehlhausen/hgehlhausen-curriculum-vitae/blob/main/README.svg" />
+<img src="./README.svg" />
 <header>
   <p>
     <span class="c14">Heath Gildwel</span><br>
