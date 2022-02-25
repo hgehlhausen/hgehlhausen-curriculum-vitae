@@ -1,7 +1,7 @@
 <!-- # Heath Gehlhausen, Fullstack Web &amp; Software Developer -->
 
 <!-- **Repo:** hgehlhausen-curriculum-vitae -->
-<img src="./README.svg" />
+<link href="./README.css" rel="stylesheet" type="text/css" />
 <header>
   <p>
     <span class="c14">Heath Gildwel</span><br>
@@ -31,51 +31,52 @@
 ### Experience
 
 #### Bank of America
+
 Assistant Vice President, Software Engineer II ( Sept 2018 - Now, 3+ years )
 
 Worked on BofA Cloud Team, Front-End Full-Stack
 
-|Technical Skills & Features|Soft Skills|
-|-|-|
-| Wizard Dynamic Form Builder | Kanban Agile |
-| Template Driven Interface | Scrum Agile |
-| Portal Redesign Navigation | ScrumBan Agile |
-| Complex Storage Spec Design | Jira Bitbucket |
-| React 16.8+, Hooks, Components | Procedure Design |
-| Redux State Manager | Conducting Technical Interviews |
-| Software Architecture Design | User Experience Design |
-| Database Achitecture Design| Risk Management |
-| Code Analysis and Optimization| Inter-Team Communications |
-| Express JS Server | |
-| Swagger 2 / OpenAPI | |
-| Bash Scripting / Dev Tools | |
-| Enzyme / React Test Tools | |
-| Jest Unit Testing | |
-| Jenkinsfile Scripting | |
-| MongoDB | |
-| GIT (advanced) | |
-| Logging | |
+| Technical Skills & Features    | Soft Skills                     |
+| ------------------------------ | ------------------------------- |
+| Wizard Dynamic Form Builder    | Kanban Agile                    |
+| Template Driven Interface      | Scrum Agile                     |
+| Portal Redesign Navigation     | ScrumBan Agile                  |
+| Complex Storage Spec Design    | Jira Bitbucket                  |
+| React 16.8+, Hooks, Components | Procedure Design                |
+| Redux State Manager            | Conducting Technical Interviews |
+| Software Architecture Design   | User Experience Design          |
+| Database Achitecture Design    | Risk Management                 |
+| Code Analysis and Optimization | Inter-Team Communications       |
+| Express JS Server              |                                 |
+| Swagger 2 / OpenAPI            |                                 |
+| Bash Scripting / Dev Tools     |                                 |
+| Enzyme / React Test Tools      |                                 |
+| Jest Unit Testing              |                                 |
+| Jenkinsfile Scripting          |                                 |
+| MongoDB                        |                                 |
+| GIT (advanced)                 |                                 |
+| Logging                        |                                 |
 
 #### FuseMind
+
 Developer ( Dec 12th 2012 - Mar 1st 2018, 5+ years )
- 
 
 Worked on both Leadforce<sup>&trade;</sup>, Leadforce Mobile<sup>&trade;</sup>, and SecureApp<sup>&trade;</sup>, maintaining and updating features in these applications.
 
-|Technical Skills & Features| Soft Skills |
-|-|-|
-| Hybrid Mobile Applications using Cordova| Jira SCRUM agile|
-| Sencha Touch 2.4+ | Release Scripting|
-| YUI Js Framework | |
-| Jquery UI | |
-| Android  ( Plugin Modification ) | |
-| Graphic Design | |
-| API Design | |
-| Dependency Breaking | |
-| Crontab | |
-| CLI usage | |
-| Optical Character Recognition | |
-  
+| Technical Skills & Features              | Soft Skills       |
+| ---------------------------------------- | ----------------- |
+| Hybrid Mobile Applications using Cordova | Jira SCRUM agile  |
+| Sencha Touch 2.4+                        | Release Scripting |
+| YUI Js Framework                         |                   |
+| Jquery UI                                |                   |
+| Android ( Plugin Modification )          |                   |
+| Graphic Design                           |                   |
+| API Design                               |                   |
+| Dependency Breaking                      |                   |
+| Crontab                                  |                   |
+| CLI usage                                |                   |
+| Optical Character Recognition            |                   |
+
 <sup>Note: </sup>Company formerly known as Laser Image until 2017.
 
 #### Level IT Support (2011-2012)
@@ -84,36 +85,42 @@ Worked on both Leadforce<sup>&trade;</sup>, Leadforce Mobile<sup>&trade;</sup>, 
 
 **Call Center** service to technicians on a **Walgreens** Distribution project.
 
-|Technical Skills & Features|Soft Skills|
-|-|-|
-|Remedy 7| Remote Troubleshooting |
-| Uniphi | High Velocity Environment |
-| Hardware Installation | |
+| Technical Skills & Features | Soft Skills               |
+| --------------------------- | ------------------------- |
+| Remedy 7                    | Remote Troubleshooting    |
+| Uniphi                      | High Velocity Environment |
+| Hardware Installation       |                           |
 
 **Email Auditor** ( 2010-2011, 10 months )
+
 - Marking emails that could result in a claim on the part of the client (a retailer) toward one of their vendors.
 - Made companion spreadsheets to assist with the rest of the team's work at PRGX, and helped implement the word scoring system currently in use ( at time of writing ).
-|Technical Skills & Features|Soft Skills|
-|-|-|
-| Excel VB Scripting | |
-| Citrix | |
-| Inhouse Email Software | |
+  |Technical Skills & Features|Soft Skills|
+  |-|-|
+  | Excel VB Scripting | |
+  | Citrix | |
+  | Inhouse Email Software | |
 
 #### HP Internship
+
 Intern (2010, Summer)
 
-|Technical Skills & Features|Soft Skills|
-|-|-|
-| Install Virtual Computing Solutions | Corporate Office Culture |
-| | Phone IT Customer Support |
-| | |
+| Technical Skills & Features         | Soft Skills               |
+| ----------------------------------- | ------------------------- |
+| Install Virtual Computing Solutions | Corporate Office Culture  |
+|                                     | Phone IT Customer Support |
+|                                     |                           |
+
 Experience with a corporate office atmosphere.
 
 ### Education
 
 #### Northwest Arkansas Community College
- Degree: AAS CISM Emphasis on Computer Programming.
+
+Degree: AAS CISM Emphasis on Computer Programming.
+
 #### University of Arkansas at Little Rock
+
 Major: BS Computer Science
 
 ### Skills List
@@ -132,30 +139,30 @@ Major: BS Computer Science
   - Automation and Test Driven Development ( TDD )
 - Automation for repetitive tasks
 
-|Technologies| | | | |
-|-|-|-|-|-|
-| ES Next (ES2015+), Javascirpt | VB.Net | PHP | Ionic | MongoDB |
-| AngularJS (1.*) | Angular 2+ | Typescript | Cordova | Sencha EXT |
-| HTML5 & CSS3 | Sencha Touch | Express JS| Node JS | Virtual Box |
-| VMWare | C++ | Java | jQuery UI | GIT
-| SVN ( Subversion ) | C# | RxJs | React | Redux
-| React Saga | Jenkinsfile ( Groovy )| Jira | Bitbucket | Github |
-| Bash Scripting | Electron | Single Page Applications (SPA) | Batch Scripting | Visio |
-| Apache Webserver | Windows XP - 10 | Ubuntu | Raspbian | CentOS |
-| Basic Network Routing | Adobe Products | ImageMagick | Blender 3D| DocuSign Integration |
-
-
+| Technologies                  |                        |                                |                 |                      |
+| ----------------------------- | ---------------------- | ------------------------------ | --------------- | -------------------- |
+| ES Next (ES2015+), Javascirpt | VB.Net                 | PHP                            | Ionic           | MongoDB              |
+| AngularJS (1.\*)              | Angular 2+             | Typescript                     | Cordova         | Sencha EXT           |
+| HTML5 & CSS3                  | Sencha Touch           | Express JS                     | Node JS         | Virtual Box          |
+| VMWare                        | C++                    | Java                           | jQuery UI       | GIT                  |
+| SVN ( Subversion )            | C#                     | RxJs                           | React           | Redux                |
+| React Saga                    | Jenkinsfile ( Groovy ) | Jira                           | Bitbucket       | Github               |
+| Bash Scripting                | Electron               | Single Page Applications (SPA) | Batch Scripting | Visio                |
+| Apache Webserver              | Windows XP - 10        | Ubuntu                         | Raspbian        | CentOS               |
+| Basic Network Routing         | Adobe Products         | ImageMagick                    | Blender 3D      | DocuSign Integration |
 
 ### Awards and Portfolio
+
 **Award** FBLA Java Programming Competition
+
 - Placed 2<sup>nd</sup> in State (AR)
 - Competed in the National competition.
 
-**Hybrid Mobile App** SecureApp<sup>&trade;</sup> 
+**Hybrid Mobile App** SecureApp<sup>&trade;</sup>
 
 **Single Page App / Website** Leadforce<sup>&trade;</sup>
 
-**Hybrid Mobile App** United Healthcare Student Resources 
+**Hybrid Mobile App** United Healthcare Student Resources
 
 **Single Page App / Website** Fama Report Site
 
