@@ -2,7 +2,7 @@
   <p align="right">
     <span class="c14">Heath Gildwel</span><br>
     <span class="c14">214.293.6933</span><br>
-    <a href="mailto:heath.gildwel@gmail.com">heath.gildwel@gmail.com</a>
+    <a href="mailto:heath.gildwel@gmail.com?body=Please%20add%20contact%20information%20here%20as%20well%20as%20a%20role%20description&subject=Please%20indicate%20job%20title%20here">heath.gildwel@gmail.com</a>
   </p>
 </header>
 
