@@ -1,70 +1,7 @@
 <!-- # Heath Gehlhausen, Fullstack Web &amp; Software Developer -->
 
 <!-- **Repo:** hgehlhausen-curriculum-vitae -->
-<style type="text/css">
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: helvetica;
-    /* list-style-type: none; */
-  }
-  header > p {
-    text-align: right;
-  }
-  p.c30 span.c28.c4.c18 {
-    font-size: 1.2em;
-  }
-  .flexbox {
-    display: flex;
-    flex: 1;
-  }
-  .flexbox > div {
-    margin: 0.25rem;
-    flex: 1;
-  }
-  .vertical {
-    flex-direction: column
-  }
-  .horizontal {
-    flex-direction: row
-  }
-
-  ul {
-    padding-left: 1rem;
-    list-style-type: square!important;
-  }
-  ul li ul li:first-child {
-    font-weight: normal
-  }
-  html, body{
-    height:100%;
-  }
-  body {
-    max-width: 6.5in;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 100vh;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
-main {
-    background: #87ccfc;
-    -ms-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-}
-footer {
-    background: #dd55dd;
-}
-h4 { 
-  font-weight: bold; text-decoration: underline;
-}
-</style>
-
+<img src="./README.svg" />
 <header>
   <p>
     <span class="c14">Heath Gildwel</span><br>
