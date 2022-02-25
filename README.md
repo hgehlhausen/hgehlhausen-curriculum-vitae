@@ -1,9 +1,5 @@
-<!-- # Heath Gehlhausen, Fullstack Web &amp; Software Developer -->
-
-<!-- **Repo:** hgehlhausen-curriculum-vitae -->
-<link href="./README.css" rel="stylesheet" type="text/css" />
 <header>
-  <p>
+  <p align="right">
     <span class="c14">Heath Gildwel</span><br>
     <span class="c14">214.293.6933</span><br>
     <a href="mailto:heath.gildwel@gmail.com">heath.gildwel@gmail.com</a>
@@ -12,21 +8,9 @@
 
 ### Strengths
 
-<div class="flexbox vertical">
-  <div class="flexbox horizontal">
-    <div>Full-Stack</div>
-    <div>Windows</div>
-<div>Linux & Mac</div>
-    <div>Design Patterns</div>
-  </div>
-  <hr>
-  <div class="flexbox horizontal">
-    <div>Hybrid Mobile</div>
-    <div>UX Design</div>
-    <div>Graphic Design</div>
-    <div>Mongo & SQL</div>
-  </div>
-</div>
+| Full-Stack    | Windows   | Linux & Mac    | Design Patterns |
+| ------------- | --------- | -------------- | --------------- |
+| Hybrid Mobile | UX Design | Graphic Design | Mongo & SQL     |
 
 ### Experience
 
