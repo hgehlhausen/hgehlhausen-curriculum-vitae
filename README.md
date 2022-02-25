@@ -1,3 +1,4 @@
+<style>header > p { font-weight: bold } </style>
 <header>
   <p align="right">
     <span class="c14">Heath Gildwel</span><br>
@@ -75,7 +76,7 @@ Worked on both Leadforce<sup>&trade;</sup>, Leadforce Mobile<sup>&trade;</sup>, 
 | Uniphi                      | High Velocity Environment |
 | Hardware Installation       |                           |
 
-**Email Auditor** ( 2010-2011, 10 months )
+**Email Auditor** ( 2010-2011, 10 montIntegrations )
 
 - Marking emails that could result in a claim on the part of the client (a retailer) toward one of their vendors.
 - Made companion spreadsheets to assist with the rest of the team's work at PRGX, and helped implement the word scoring system currently in use ( at time of writing ).
@@ -123,17 +124,17 @@ Major: BS Computer Science
   - Automation and Test Driven Development ( TDD )
 - Automation for repetitive tasks
 
-| Technologies                  |                        |                                |                 |                      |
-| ----------------------------- | ---------------------- | ------------------------------ | --------------- | -------------------- |
-| ES Next (ES2015+), Javascirpt | VB.Net                 | PHP                            | Ionic           | MongoDB              |
-| AngularJS (1.\*)              | Angular 2+             | Typescript                     | Cordova         | Sencha EXT           |
-| HTML5 & CSS3                  | Sencha Touch           | Express JS                     | Node JS         | Virtual Box          |
-| VMWare                        | C++                    | Java                           | jQuery UI       | GIT                  |
-| SVN ( Subversion )            | C#                     | RxJs                           | React           | Redux                |
-| React Saga                    | Jenkinsfile ( Groovy ) | Jira                           | Bitbucket       | Github               |
-| Bash Scripting                | Electron               | Single Page Applications (SPA) | Batch Scripting | Visio                |
-| Apache Webserver              | Windows XP - 10        | Ubuntu                         | Raspbian        | CentOS               |
-| Basic Network Routing         | Adobe Products         | ImageMagick                    | Blender 3D      | DocuSign Integration |
+| Technologies          |                        |             |                 |             |
+| --------------------- | ---------------------- | ----------- | --------------- | ----------- |
+| ES Next (ES2015+)     | VB.Net                 | PHP         | Ionic           | MongoDB     |
+| AngularJS (1.\*)      | Angular 2+             | Typescript  | Cordova         | Sencha EXT  |
+| HTML5 & CSS3          | Sencha Touch           | Express JS  | Node JS         | Virtual Box |
+| VMWare                | C++                    | Java        | jQuery UI       | GIT         |
+| SVN ( Subversion )    | C#                     | RxJs        | React           | Redux       |
+| React Saga            | Jenkinsfile ( Groovy ) | Jira        | Bitbucket       | Github      |
+| Bash Scripting        | Electron               | Javascript  | Batch Scripting | Visio       |
+| Apache Webserver      | Windows XP - 10        | Ubuntu      | Raspbian        | CentOS      |
+| Basic Network Routing | Adobe Products         | ImageMagick | Blender 3D      | DocuSign    |
 
 ### Awards and Portfolio
 
