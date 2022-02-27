@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heath Gildwel</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///home/hgehlhausen/Projects/hgehlhausen-curriculum-vitae/styles.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<header>
+  <p align="right">
+    Heath Gildwel<br>
+    214.293.6933<br>
+    <a href="mailto:heath.gildwel@gmail.com?body=Please%20add%20contact%20information%20here%20as%20well%20as%20a%20role%20description&subject=Please%20indicate%20job%20title%20here">heath.gildwel@gmail.com</a>
+  </p>
+</header>
+<h3 id="strengths">Strengths</h3>
+<table>
+<thead>
+<tr>
+<th>Full-Stack</th>
+<th>Windows</th>
+<th>Linux &amp; Mac</th>
+<th>Design Patterns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid Mobile</td>
+<td>UX Design</td>
+<td>Graphic Design</td>
+<td>Mongo &amp; SQL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="experience">Experience</h3>
+<h4 id="bank-of-america">Bank of America</h4>
+<p>Assistant Vice President, Software Engineer II ( Sept 2018 - Now, 3+ years )</p>
+<p>Worked on BofA Cloud Team, Front-End Full-Stack</p>
+<table>
+<thead>
+<tr>
+<th>Technical Skills &amp; Features</th>
+<th>Soft Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wizard Dynamic Form Builder</td>
+<td>Kanban Agile</td>
+</tr>
+<tr>
+<td>Template Driven Interface</td>
+<td>Scrum Agile</td>
+</tr>
+<tr>
+<td>Portal Redesign Navigation</td>
+<td>ScrumBan Agile</td>
+</tr>
+<tr>
+<td>Complex Storage Spec Design</td>
+<td>Jira Bitbucket</td>
+</tr>
+<tr>
+<td>React 16.8+, Hooks, Components</td>
+<td>Procedure Design</td>
+</tr>
+<tr>
+<td>Redux State Manager</td>
+<td>Conducting Technical Interviews</td>
+</tr>
+<tr>
+<td>Software Architecture Design</td>
+<td>User Experience Design</td>
+</tr>
+<tr>
+<td>Database Achitecture Design</td>
+<td>Risk Management</td>
+</tr>
+<tr>
+<td>Code Analysis and Optimization</td>
+<td>Inter-Team Communications</td>
+</tr>
+<tr>
+<td>Express JS Server</td>
+<td></td>
+</tr>
+<tr>
+<td>Swagger 2 / OpenAPI</td>
+<td></td>
+</tr>
+<tr>
+<td>Bash Scripting / Dev Tools</td>
+<td></td>
+</tr>
+<tr>
+<td>Enzyme / React Test Tools</td>
+<td></td>
+</tr>
+<tr>
+<td>Jest Unit Testing</td>
+<td></td>
+</tr>
+<tr>
+<td>Jenkinsfile Scripting</td>
+<td></td>
+</tr>
+<tr>
+<td>MongoDB</td>
+<td></td>
+</tr>
+<tr>
+<td>GIT (advanced)</td>
+<td></td>
+</tr>
+<tr>
+<td>Logging</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="fusemind">FuseMind</h4>
+<p>Developer ( Dec 12th 2012 - Mar 1st 2018, 5+ years )</p>
+<p>Worked on both Leadforce<sup>™</sup>, Leadforce Mobile<sup>™</sup>, and SecureApp<sup>™</sup>, maintaining and updating features in these applications.</p>
+<table>
+<thead>
+<tr>
+<th>Technical Skills &amp; Features</th>
+<th>Soft Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hybrid Mobile Applications using Cordova</td>
+<td>Jira SCRUM agile</td>
+</tr>
+<tr>
+<td>Sencha Touch 2.4+</td>
+<td>Release Scripting</td>
+</tr>
+<tr>
+<td>YUI Js Framework</td>
+<td></td>
+</tr>
+<tr>
+<td>Jquery UI</td>
+<td></td>
+</tr>
+<tr>
+<td>Android ( Plugin Modification )</td>
+<td></td>
+</tr>
+<tr>
+<td>Graphic Design</td>
+<td></td>
+</tr>
+<tr>
+<td>API Design</td>
+<td></td>
+</tr>
+<tr>
+<td>Dependency Breaking</td>
+<td></td>
+</tr>
+<tr>
+<td>Crontab</td>
+<td></td>
+</tr>
+<tr>
+<td>CLI usage</td>
+<td></td>
+</tr>
+<tr>
+<td>Optical Character Recognition</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><sup>Note: </sup>Company formerly known as Laser Image until 2017.</p>
+<h4 id="level-it-support-2011-2012">Level IT Support (2011-2012)</h4>
+<p><strong>Technical services</strong> as <strong>Walmart</strong> Project</p>
+<p><strong>Call Center</strong> service to technicians on a <strong>Walgreens</strong> Distribution project.</p>
+<table>
+<thead>
+<tr>
+<th>Technical Skills &amp; Features</th>
+<th>Soft Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remedy 7</td>
+<td>Remote Troubleshooting</td>
+</tr>
+<tr>
+<td>Uniphi</td>
+<td>High Velocity Environment</td>
+</tr>
+<tr>
+<td>Hardware Installation</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Email Auditor</strong> ( 2010-2011, 10 montIntegrations )</p>
+<ul>
+<li>Marking emails that could result in a claim on the part of the client (a retailer) toward one of their vendors.</li>
+<li>Made companion spreadsheets to assist with the rest of the team's work at PRGX, and helped implement the word scoring system currently in use ( at time of writing ).
+<table>
+<thead>
+<tr>
+<th>Technical Skills &amp; Features</th>
+<th>Soft Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Excel VB Scripting</td>
+<td></td>
+</tr>
+<tr>
+<td>Citrix</td>
+<td></td>
+</tr>
+<tr>
+<td>Inhouse Email Software</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h4 id="hp-internship">HP Internship</h4>
+<p>Intern (2010, Summer)</p>
+<table>
+<thead>
+<tr>
+<th>Technical Skills &amp; Features</th>
+<th>Soft Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Install Virtual Computing Solutions</td>
+<td>Corporate Office Culture</td>
+</tr>
+<tr>
+<td></td>
+<td>Phone IT Customer Support</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Experience with a corporate office atmosphere.</p>
+<h3 id="education">Education</h3>
+<h4 id="northwest-arkansas-community-college">Northwest Arkansas Community College</h4>
+<p>Degree: AAS CISM Emphasis on Computer Programming.</p>
+<h4 id="university-of-arkansas-at-little-rock">University of Arkansas at Little Rock</h4>
+<p>Major: BS Computer Science</p>
+<h3 id="skills-list">Skills List</h3>
+<ul>
+<li>Object Oriented Programming (OOP)</li>
+<li>OOP Design Patterns</li>
+<li>Functional Programming Patterns</li>
+<li>Reusable code Practices</li>
+<li>Structure Design Concepts
+<ul>
+<li>MVC, Inheritance, Composition, Factory and other software architectural concepts</li>
+</ul>
+</li>
+<li>Communication Skills
+<ul>
+<li>Requirements Gathering</li>
+<li>Scope Analysis</li>
+<li>Gap Analysis</li>
+</ul>
+</li>
+<li>Unit Testing
+<ul>
+<li>Automation and Test Driven Development ( TDD )</li>
+</ul>
+</li>
+<li>Automation for repetitive tasks</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Technologies</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ES Next (ES2015+)</td>
+<td>VB.Net</td>
+<td>PHP</td>
+<td>Ionic</td>
+<td>MongoDB</td>
+</tr>
+<tr>
+<td>AngularJS (1.*)</td>
+<td>Angular 2+</td>
+<td>Typescript</td>
+<td>Cordova</td>
+<td>Sencha EXT</td>
+</tr>
+<tr>
+<td>HTML5 &amp; CSS3</td>
+<td>Sencha Touch</td>
+<td>Express JS</td>
+<td>Node JS</td>
+<td>Virtual Box</td>
+</tr>
+<tr>
+<td>VMWare</td>
+<td>C++</td>
+<td>Java</td>
+<td>jQuery UI</td>
+<td>GIT</td>
+</tr>
+<tr>
+<td>SVN ( Subversion )</td>
+<td>C#</td>
+<td>RxJs</td>
+<td>React</td>
+<td>Redux</td>
+</tr>
+<tr>
+<td>React Saga</td>
+<td>Jenkinsfile ( Groovy )</td>
+<td>Jira</td>
+<td>Bitbucket</td>
+<td>Github</td>
+</tr>
+<tr>
+<td>Bash Scripting</td>
+<td>Electron</td>
+<td>Javascript</td>
+<td>Batch Scripting</td>
+<td>Visio</td>
+</tr>
+<tr>
+<td>Apache Webserver</td>
+<td>Windows XP - 10</td>
+<td>Ubuntu</td>
+<td>Raspbian</td>
+<td>CentOS</td>
+</tr>
+<tr>
+<td>Basic Network Routing</td>
+<td>Adobe Products</td>
+<td>ImageMagick</td>
+<td>Blender 3D</td>
+<td>DocuSign</td>
+</tr>
+<tr>
+<td>Docker Containers</td>
+<td>Git Flow</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="awards-and-portfolio">Awards and Portfolio</h3>
+<p><strong>Award</strong> FBLA Java Programming Competition</p>
+<ul>
+<li>Placed 2<sup>nd</sup> in State (AR)</li>
+<li>Competed in the National competition.</li>
+</ul>
+<p><strong>Hybrid Mobile App</strong> SecureApp<sup>™</sup></p>
+<p><strong>Single Page App / Website</strong> Leadforce<sup>™</sup></p>
+<p><strong>Hybrid Mobile App</strong> United Healthcare Student Resources</p>
+<p><strong>Single Page App / Website</strong> Fama Report Site</p>
+<!-- Strengths Full-Stack Windows Linux and Mac Design Patterns Hybrid Mobile Graphic Design UX Design SQL Databases Experience FuseMind, Developer ( Dec 12th 2012 - Mar 1st 2018, 5+ years ) Hybrid Mobile applications using Cordova, multiple JS frameworks. Graphic Design, Project Planning, Agile Development using Jira. API Design, Dependency Breaking and enforcing best practices. Company formerly known as Laser Image until 2017. Level IT Support (2011-2012) Technical services as Walmart Project Call Center service to technicians on a Walgreens Distribution project. Remote Troubleshooting, Experience with Remedy 7 and Uniphi, working in a highly active environment. Additionally, installed video cards into multiple Hewlett Packard PC&rsquo;s. Email Auditor ( 2010-2011, 10 months ) Marking emails that could result in a claim on the part of the client (a retailer) toward one of their vendors. Made companion spreadsheets to assist with the rest of the team&#39;s work at PRGX, and helped implement the word scoring system currently in use. Clerical and Analysis Skills, Citrix Use, and in-house software usage. HP Internship (2010, Summer) Experience with a corporate office atmosphere. Phone Supporting Printers and Computers. Dealt directly with customers. Education - Northwest Arkansas Community College, Degree: AAS CISM Emphasis on Computer Programming. Skills - Object Oriented Programming (OOP) - Design Patterns used to solve multiple issues, both Inheritance and Composition patterns of reusable code. Structure Design Concepts - MVC, Inheritance, Composition, Factory and other software architectural concepts. Communication Skills - Explaining technical concepts to clarify requirements quickly, and generating documentation for code when needed. Unit Testing - Automated testing and test-driven development. Automation - Crontab and Scheduled Tasks in production environments. Programming Languages and Frameworks, PHP, HTML5, CSS3, Javascript, ECMA 6 / 2016, VB.NET, PostgreSQL, MySQL, DOS, Bash, jQuery, jQuery UI, Angular 1, Angular 2+, Ionic 1, Ionic 2+, Cordova, SVG, Node, Express JS, Sencha Ext, Sencha Touch, RxJS, NoSQL, Apache, GIT, SVN, Typescript, C++, C#, Java Operating Systems - Experience with Windows XP thru 10, &nbsp;Linux Ubuntu 12.04x64, Ubuntu 13.04/10x64 on SecureBoot machines, Raspbian, CentOS Hardware Break-Fix - Installed multiple cards, hard drives, boards, and specialized components into PC&rsquo;s. Troubleshooting the device for issues with the physical layer. Graphic Design - including Adobe software, ImageMagick and other products. Software Experience - Microsoft Office, Google Docs and Services, Adobe Creative Suite, Blender 3D. Awards and Portfolio Award - FBLA Java Programming Competition Placed 2nd in State (AR) in Competed in the National competition. Mobile App - Londen SecureApp Project using Sencha Touch 2.4 and Apache Cordova. MVC Javascript Framework. Docusign Integration for signature on-site. Data Gathering and Validation based on complex, multi-state rule-set. Website - Leadforce Lead Management System PHP MVC Framework. Front-end UX Design and Implementation. Maintaining Existing project. Integrated Payment System Updates. Data Search and Management. Automated Tasks using Crontab. Mobile App - United Healthcare Student Resources Mobile App Sencha Touch 2 for first version, Ionic 2+ / Angular 2+ for second version. Complex API requests using React Observables. Translate concept images into working User Interfaces. Unit Testing via Mocha JS, Mocking required classes. Website - Fama Report Site Node / Express JS Backend. Separate Routing for API and Page requests. Login kept separate for reusability. Angular JS Front-End.</span>
+-->
+<p><a href="./projects/">Projects</a>
+<a href="./education">Education</a>
+<a href="./resume/">Resume</a>
+<a href="./technologies/">Technologies</a></p>
+
+</body>
+</html>

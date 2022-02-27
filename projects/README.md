@@ -1,5 +1,28 @@
 ## Projects
 
+### Bank of America
+
+#### BofA Cloud - Build Wizard
+- Internal
+- Dynamically built a form from a given data set
+- Designed &amp; Implemented a custom JS validation system
+- Designed &amp; Implemented a custom JS rendering selector
+- Designed &amp; Implemented custom submission parsing to keep behavior generic
+
+#### BofA Cloud - Template Driven Interface
+- Leveraging Wizard, consumed a known specification type.
+- Produced a configuration driven interface
+- Returned data the specification's owners
+- Federated model for architecture
+- Assisted in design of multiple contracts and determining requirements, overall  architectural design
+
+#### BofA Cloud - Portal Redesign
+- Assisting in requirement specifications and refinement on wireframes
+- Architected data-driven navigation for personalized options
+- Conformed to existing Branding document and recommended updates where needed
+- Preserved existing functionality where it was not replaced
+- Minimized risk before release by keeping a narrow scope and communicating to prevent conflicts when main branch merged
+
 ### FuseMind LLC
 
 #### Londen SecureApp
@@ -19,7 +42,7 @@ session to finish the signing process on-site. The app was designed to handle al
 insurance laws, which have alternate rules for each group of states was applied for validation and 
 enabling / disabling of data collection.
 
-[Click Here](https://fnd.io/#/us/ipad-app/1175083614-secureapp-by-lincoln-heritage-life-insur) For the live page address of this in-production app on iOS
+[Click Here](https://appadvice.com/app/secureapp/1175083614) For the live page address of this in-production app on iOS
 
 Released for iPad only
 
