@@ -2,6 +2,10 @@
 
 ### Bank of America
 
+While at Bank of America, I operated in the role of co-team-lead for the front-end part of the project. This included management over our MongoDB Database, designing its data-architecture; management over the four programs in our mono-repository; and working in React 16.8+ for the user interface as a developer.
+
+Additionally, in my leadership role, I mentored developers, performed technical interviews of applicants, and managed the project using multiple agile frameworks ( SCRUM, Kanban, Scrumban ). Since I was also responsible for the full life-cycle of several features being implemented, from requirements gathering to design, grooming, implementation and delivery, I have strong experience in the metrics-reporting which gives management both piece of mind and the ability to course-correct when visions change.
+
 #### BofA Cloud - Build Wizard
 - Internal
 - Dynamically built a form from a given data set
