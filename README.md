@@ -1,10 +1,12 @@
 <header>
   <p align="right">
-    Heath Gildwel<br>
-    214.293.6933<br>
-    <a href="mailto:heath.gildwel@gmail.com?body=Please%20add%20contact%20information%20here%20as%20well%20as%20a%20role%20description&subject=Please%20indicate%20job%20title%20here">heath.gildwel@gmail.com</a>
+    Heath Gildwel<br />
+    214.293.6933<br />
+    <a href="mailto:heath.gildwel@gmail.com?body=Please%20add%20contact%20information%20here%20as%20well%20as%20a%20role%20description&subject=Please%20indicate%20job%20title%20here">heath.gildwel@gmail.com</a><br>
   </p>
 </header>
+
+[My Github](https://github.com/hgehlhausen/hgehlhausen-curriculum-vitae/)
 
 ### Strengths
 
